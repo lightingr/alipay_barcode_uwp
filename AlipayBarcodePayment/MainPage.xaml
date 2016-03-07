@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="AlipayBarcodePayment.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AlipayBarcodePayment"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Background="#FF0D92C6" >
+
+    <Viewbox Stretch="Uniform" >
+        <Grid Margin="0,-150,0,0" >
+            <Grid.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/BarcodePage.png">
+                    <ImageBrush.Transform>
+                        <CompositeTransform/>
+                    </ImageBrush.Transform>
+                </ImageBrush>
+            </Grid.Background>
+            <Image x:Name="barcode" HorizontalAlignment="Left" Height="320" Margin="25,200,25,0" VerticalAlignment="Top" Width="875"/>
+            <Image x:Name="qrcode" HorizontalAlignment="Left" Height="680" Margin="120,640,0,0" VerticalAlignment="Top" Width="680"/>
+            <Image HorizontalAlignment="Left" Height="114" Margin="402,926,0,0" VerticalAlignment="Top" Width="115" Source="Assets/Alipay.png"/>
+            <TextBlock x:Name="code" Margin="25,534,25,0" TextWrapping="Wrap" Text="2846 5921 5307 680795" VerticalAlignment="Top" TextAlignment="Center" Height="66" FontFamily="Microsoft Sans Serif" FontSize="50.667"/>
+            <Button Content="   每分钟刷新" Margin="25,1330,25,272" Click="Button_Click" Height="82" FontSize="26.667" HorizontalAlignment="Stretch" Background="{x:Null}" BorderBrush="{x:Null}" />
+        </Grid>
+    </Viewbox>
+</Page>
