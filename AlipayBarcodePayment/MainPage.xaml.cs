@@ -42,7 +42,7 @@ namespace AlipayBarcodePayment
             otp = new OtpManager(Configurations.Tid, Configurations.Index, Configurations.UserId);
             //decrypt seed
             OtpShareStore.putString(Application.Current, Configurations.Tid, Configurations.EncryptedSeed, OtpShareStore.SETTING_INFOS_NEW);
-            OtpShareStore.putString(Application.Current, "interval", Configurations.Index, OtpShareStore.SETTING_INFOS_NEW);
+            OtpShareStore.putString(Application.Current, "interval", Configurations.Interval, OtpShareStore.SETTING_INFOS_NEW);
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
